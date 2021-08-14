@@ -1,0 +1,9 @@
+
+begin
+    Const int x* = 8+8i ;
+    Const int y* = -9-2.2i ;
+    float 1a = 1.3e-3 ;
+    float b = 2.3e+3 ;
+    cin ( a ) ;
+    cout ( a ) ;
+end

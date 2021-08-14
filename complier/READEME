@@ -1,0 +1,57 @@
+
+
+1)语言介绍：
+1.1每行只有一个语句
+1.2分支语句:
+    if 表达式
+    begin
+    ......
+    end
+    else
+    begin
+    ....
+    end
+1.3循环语句:
+    while 表达式
+    begin
+    ...
+    end
+    do
+    begin
+    end
+    while 表达式
+
+1.4结构体
+    struct 结构体名字
+    begin
+    ....
+    end
+1.5函数定义
+void/int/float 函数名 int a int b
+begin
+    ....
+    return
+end
+
+
+***1)在testLexical.txt、testGrammar.txt、testSyntax.txt中空符号用e来表示
+***2)在testLexical.txt的正规文法中产生式暂时为A->a;A->aB类型的右线性文法
+
+不可接受:NFA或DFA出现错误的输入的字母不能有合适的转换函数对应或者当没有输入字符时还不处于可接受状态
+可接受:当没有输入字符时处于可接受状态
+非终结符为'a'->'z'(simpleFormDfa类中确定了)
+token类别中的类型有关键词、标识符、常量、限定符和运算符
+(isConst)常量的类型有:
+整型常量，浮点型常量，bool型常量,复数型常量
+(isIdentier)标识符：字母数字下划线组成，首字母不能为数字.
+(isKey)关键字:
+(isOperator)运算符:
+(isQualifier)限定符:
+
+
+
+***3)语法分析就是根据词法分析的结果每行进行语法分析得出改行的单词组合是否正确
+语法分析的方法是LR(1)文法，先读取语法表达式创建语法表达式-> 构建LR(1)的有限状态机->根据Look Ahead的集合创建GOTO，ACTION表即跳转表->即可实现语法分析的过程.
+
+***3)testSource.txt输入程序:以begin开始以end结束。每个单词之间以空格或者换行符分隔。
+本项目潘恒宇所写,若代码有可优化的地方,恳请指出,谢谢！联系方式 邮箱：936187425@qq.com or hengyu.pan@njust.edu.cn

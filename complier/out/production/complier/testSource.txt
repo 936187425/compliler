@@ -1,0 +1,19 @@
+
+begin
+    int input1 , input2 ;
+    Const int maxn = 100 ;
+    int out ;
+    cin ( input1 ) ;
+    cin ( input2 ) ;
+
+    if input1 < 0 then input1 = 0 ;
+
+    if input1 > input2 then
+    out = ( input1 + maxn ) * 100 ;
+    else
+    out = ( input2 + maxn ) * 100 ;
+
+    cout ( out ) ;
+
+    while input1 > input2 do input1 = input1 - 1 ;
+end
